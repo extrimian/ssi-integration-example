@@ -1,0 +1,63 @@
+{
+    "id": "turist-output",
+    "schema": "turist-output",
+    "display": {
+        "title": {
+            "text": "Ministerio de Turismo"
+        },
+        "subtitle": {
+            "text": "Credencial de Turista"
+        },
+        "description": {
+            "text": "Con tu credencial de turista puedes acceder a descuentos en locales adheridos"
+        },
+        "properties": [
+            {
+                "label": "Nombre",
+                "path": [
+                    "$.credentialSubject.name"
+                ],
+                "schema": {
+                    "type": "string"
+                },
+                "fallback": "Name"
+            },
+            {
+                "label": "Número de pasaporte",
+                "path": [
+                    "$.credentialSubject.passport"
+                ],
+                "schema": {
+                    "type": "string"
+                },
+                "fallback": "Passport"
+            },
+            {
+                "label": "Período de estadía",
+                "path": [
+                    "$.credentialSubject.period"
+                ],
+                "schema": {
+                    "type": "string"
+                },
+                "fallback": "Period"
+            }
+        ]
+    },
+    "styles": {
+        "thumbnail": {
+            "uri": "https://i.ibb.co/fD0nsxq/logo.png",
+            "alt": "Logo"
+        },
+        "hero": {
+            "uri": "https://i.ibb.co/bHF3g7m/Credencial-Hack-Along-1.png",
+            "alt": "Background"
+        },
+        "background": {
+            "color": "#FFFFFF"
+        },
+        "text": {
+            "color": "#2B2B2D"
+        }
+    }
+}

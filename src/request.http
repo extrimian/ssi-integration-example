@@ -1,0 +1,19 @@
+
+###
+
+###
+POST http://localhost:3021/credentials HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Brian Desiderio",
+    "passportNumber": "A-123456789",
+    "validFrom": "2024-08-22",
+    "validTo": "2024-08-31"
+}
+
+
+### EJEMPLO REAL DE RESPUESTA DE ESTA API. 
+### "invitationId": "ad68e13f-5495-475c-ae4c-db8a6d1b84a0",
+### "oobContentData": "didcomm://?_oob=eyJ0eXBlIjoiaHR0cHM6Ly9kaWRjb21tLm9yZy9vdXQtb2YtYmFuZC8yLjAvaW52aXRhdGlvbiIsImlkIjoiYWQ2OGUxM2YtNTQ5NS00NzVjLWFlNGMtZGI4YTZkMWI4NGEwIiwiZnJvbSI6ImRpZDpxdWFya2lkOkVpQ2FVNlNIam5iQ3I4VWFheEJ6LWR3SVc3UHdpYmJTamxBbE9CWnRTS250T3ciLCJib2R5Ijp7ImdvYWxfY29kZSI6InN0cmVhbWxpbmVkLXZjIiwiYWNjZXB0IjpbImRpZGNvbW0vdjIiXX19"
+### Pasando el contenido del oobContentData a un QR, se puede scanear con la wallet de quarkid
